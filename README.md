@@ -90,3 +90,105 @@ nano django_app/Dockerfile
 ---
 
 ### Buoc 4: Tao requirements.txt
+Django==4.2.11
+mysqlclient==2.2.4
+python-decouple==3.8
+
+<img width="1480" height="758" alt="image" src="https://github.com/user-attachments/assets/bedffe62-538a-4db4-8999-e5cca920fe6b" />
+
+---
+
+### Buoc 5: Tao Django project
+```bash
+pip3 install django --break-system-packages
+export PATH=$PATH:/home/dinhhoa/.local/bin
+django-admin startproject config .
+```
+<img width="1486" height="762" alt="image" src="https://github.com/user-attachments/assets/37a9e4cf-dfa3-44ad-aa1e-3e922ee92295" />
+
+---
+
+### Buoc 6: Viet models.py (5 bang)
+```bash
+nano camdo/models.py
+```
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/866aaa9a-86c6-466b-98ea-2093a59f83d9" />
+
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/11769111-2c24-4384-aff5-f40094e40fca" />
+
+---
+
+### Buoc 7: Viet admin.py
+```bash
+nano camdo/admin.py
+```
+> 📸 **[Chen anh trang Admin Django]**
+
+---
+
+### Buoc 8: Viet views.py - trang con no qua han
+```bash
+nano camdo/views.py
+```
+
+---
+
+### Buoc 9: Build va chay Docker
+```bash
+docker compose up --build -d
+```
+> 📸 **[Chen anh ket qua docker compose up]**
+
+---
+
+### Buoc 10: Migrate database
+```bash
+docker exec camdo_web python manage.py makemigrations camdo
+docker exec camdo_web python manage.py migrate
+```
+> 📸 **[Chen anh ket qua migrate]**
+
+---
+
+### Buoc 11: Tao tai khoan admin
+```bash
+docker exec -it camdo_web python manage.py createsuperuser
+```
+
+---
+
+### Buoc 12: Cai Cloudflare Tunnel
+```bash
+docker exec -it mycloudflared cloudflared tunnel login
+docker exec -it mycloudflared cloudflared tunnel create camdo
+docker exec -it mycloudflared cloudflared tunnel route dns camdo camdo.taphamdinhhoa.io.vn
+docker exec -it mycloudflared cloudflared tunnel run --url http://camdo_web:8000 camdo
+```
+> 📸 **[Chen anh Cloudflare Tunnel dang chay]**
+
+---
+
+## 🌐 Ket qua
+
+| Trang | Link |
+|---|---|
+| Trang chu (con no qua han) | https://camdo.taphamdinhhoa.io.vn |
+| Trang Admin | https://camdo.taphamdinhhoa.io.vn/admin |
+| phpMyAdmin | http://192.168.123.115:8080 |
+
+> 📸 **[Chen anh trang chu hien thi con no]**
+
+> 📸 **[Chen anh trang Admin]**
+
+> 📸 **[Chen anh phpMyAdmin]**
+
+---
+
+## 🛠️ Cong nghe su dung
+
+- **Python** 3.11
+- **Django** 4.2.11
+- **MariaDB** 11.2
+- **Docker** + Docker Compose
+- **Cloudflare Tunnel**
+- **phpMyAdmin**
