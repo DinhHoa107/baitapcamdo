@@ -1,13 +1,13 @@
-# 🏦 Quan Ly Tiem Cam Do - BTVN 02
+#  Quan Ly Tiem Cam Do - BTVN 02
 
-**Mon hoc:** Phat trien ung dung voi ma nguon mo (TEE0421)  
-**Sinh vien:** Dinh Hoa  
+**Mon hoc:** Phat trien ung dung voi ma nguon mo 
+**Sinh vien:** Tạ Phạm Đình Hòa
 **Lop:** 58KTPM  
 **Deadline:** 23h59 ngày 09/05/2026  
 
 ---
 
-## 📋 Yeu cau de bai
+##  Yeu cau de bai
 
 - Thiet ke CSDL cho he thong quan ly tiem cam do
 - Xay dung 3 service bang Docker: MariaDB, phpMyAdmin, Django
@@ -17,7 +17,7 @@
 
 ---
 
-## 🗄️ Thiet ke CSDL
+##  Thiet ke CSDL
 
 <img width="1184" height="1631" alt="image" src="https://github.com/user-attachments/assets/89d7a25f-2eae-4eb9-8e0a-d9d05efaaaf6" />
 
@@ -55,7 +55,7 @@ camdo_project/
 ```
 ---
 
-## ⚙️ Cac buoc thuc hien
+##  Cac buoc thuc hien
 
 ### Buoc 1: Tao cau truc thu muc
 ```bash
@@ -169,11 +169,12 @@ docker exec -it mycloudflared cloudflared tunnel create camdo
 docker exec -it mycloudflared cloudflared tunnel route dns camdo camdo.taphamdinhhoa.io.vn
 docker exec -it mycloudflared cloudflared tunnel run --url http://camdo_web:8000 camdo
 ```
-> 📸 **[Chen anh Cloudflare Tunnel dang chay]**
+<img width="1478" height="765" alt="image" src="https://github.com/user-attachments/assets/8daa157d-479f-41c8-a246-d6338e88d0db" />
+
 
 ---
 
-## 🌐 Ket qua
+## Ket qua
 
 | Trang | Link |
 |---|---|
@@ -181,15 +182,15 @@ docker exec -it mycloudflared cloudflared tunnel run --url http://camdo_web:8000
 | Trang Admin | https://camdo.taphamdinhhoa.io.vn/admin |
 | phpMyAdmin | http://192.168.123.115:8080 |
 
-> 📸 **[Chen anh trang chu hien thi con no]**
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/672a9acf-481f-4495-b820-095205e2a92e" />
 
-> 📸 **[Chen anh trang Admin]**
+><img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/7a8b65d7-6484-477d-8694-26f7fb831c99" />
 
-> 📸 **[Chen anh phpMyAdmin]**
+<img width="1918" height="1077" alt="image" src="https://github.com/user-attachments/assets/f2619046-bbf1-4842-80fb-fe5ef459992f" />
 
 ---
 
-## 🛠️ Cong nghe su dung
+##  Cong nghe su dung
 
 - **Python** 3.11
 - **Django** 4.2.11
