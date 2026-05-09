@@ -78,6 +78,7 @@ nano docker-compose.yml
 
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/44ec1479-f9fd-4e0c-ac50-a99b163b40b4" />
 
+<img width="1480" height="759" alt="image" src="https://github.com/user-attachments/assets/00f05c19-81d6-4448-8335-e6f238582fe8" />
 
 ---
 
