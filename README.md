@@ -122,7 +122,8 @@ nano camdo/models.py
 ```bash
 nano camdo/admin.py
 ```
-> 📸 **[Chen anh trang Admin Django]**
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/dc532b7a-af77-4fae-87e3-87edbcbfd9c7" />
+
 
 ---
 
@@ -130,6 +131,7 @@ nano camdo/admin.py
 ```bash
 nano camdo/views.py
 ```
+<img width="1477" height="757" alt="image" src="https://github.com/user-attachments/assets/8acccc3a-bee7-42d8-98d0-9582cac59ca4" />
 
 ---
 
@@ -137,7 +139,8 @@ nano camdo/views.py
 ```bash
 docker compose up --build -d
 ```
-> 📸 **[Chen anh ket qua docker compose up]**
+<img width="1485" height="762" alt="image" src="https://github.com/user-attachments/assets/e4ac2270-930d-443a-8d2e-89bc2373bf44" />
+
 
 ---
 
@@ -146,7 +149,8 @@ docker compose up --build -d
 docker exec camdo_web python manage.py makemigrations camdo
 docker exec camdo_web python manage.py migrate
 ```
-> 📸 **[Chen anh ket qua migrate]**
+<img width="1477" height="758" alt="image" src="https://github.com/user-attachments/assets/64a6c2ed-24e5-4366-a6e9-00a4208a5a0d" />
+
 
 ---
 
@@ -154,6 +158,7 @@ docker exec camdo_web python manage.py migrate
 ```bash
 docker exec -it camdo_web python manage.py createsuperuser
 ```
+<img width="1917" height="1075" alt="image" src="https://github.com/user-attachments/assets/6ee9e692-dfc9-4cbd-a8d9-3204891b0499" />
 
 ---
 
