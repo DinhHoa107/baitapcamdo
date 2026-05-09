@@ -63,7 +63,8 @@ mkdir -p camdo_project/django_app/camdo
 mkdir -p camdo_project/django_app/templates
 cd camdo_project
 ```
-> 📸 **[Chen anh terminal sau khi tao thu muc]**
+<img width="1478" height="758" alt="image" src="https://github.com/user-attachments/assets/19fae3cf-2f8e-4716-a123-1458a64034d8" />
+
 
 ---
 
@@ -75,7 +76,8 @@ nano docker-compose.yml
 - Service **phpmyadmin**: cong 8080
 - Service **web**: Django build tu Dockerfile
 
-> 📸 **[Chen anh noi dung docker-compose.yml]**
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/44ec1479-f9fd-4e0c-ac50-a99b163b40b4" />
+
 
 ---
 
@@ -83,7 +85,7 @@ nano docker-compose.yml
 ```bash
 nano django_app/Dockerfile
 ```
-> 📸 **[Chen anh noi dung Dockerfile]**
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/b05a98f7-36dc-48d6-997f-6f95026bc284" />
 
 ---
 
